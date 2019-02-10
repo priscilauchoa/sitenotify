@@ -63,7 +63,7 @@ span div{
 }
 
 .imagem div{
-        background-color: rgba(65, 70, 65, 0.7);
+        background-color: rgba(65, 70, 65, 0.);
         display:block;
         align-items: center;
         height: 40px;
