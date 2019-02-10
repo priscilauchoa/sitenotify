@@ -9,6 +9,10 @@
     "footer";
 }
 
+body{
+    margin:0;
+}
+
 header{
     border-top: 6px solid rgb(118, 224, 118);
     margin-top: 3px;
@@ -16,8 +20,9 @@ header{
     background-size: cover;
     grid-area: header;
     
-     
+    
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -37,7 +42,46 @@ header .container {
 }
 
 .container {
-    width: 800px;
+    width: 1000px; 
+}
+
+.space-entre{
+    justify-content: space-evenly;
+    height: 40vh;
+}
+
+.containertwo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+iframe{
+    height: 200px;
+}
+
+button{
+    background-color:rgb(118, 224, 118);
+    color: white;
+    border-radius: 0 10px 10px 0;
+    font-size: 25px;
+    height: 43px;
+    width: 200px;
+    border:0;
+}
+
+input{
+    border-radius: 10px 0 0 10px;
+    border:0;
+    height: 40px ;
+    width: 250px;
+    padding-left: 15px;
+}
+
+.juntinho{
+    display: flex;
+    justify-content: center;
 }
 
 span {
@@ -138,8 +182,8 @@ main .container {
 .card{
     
     align-items: center;
-    height: 161px;
-    width: 220px;
+    height: 200px;
+    width: 260px;
     margin-top: 35px;
     margin-block-end: 35px;
     display: flex;
@@ -157,22 +201,23 @@ main .container {
     
     align-items: center;
     background-color: rgba(79, 228, 79, 0.8);
-    border-radius: 50%;
+    border-radius: 100%;
     display:flex;
     justify-content: center;
     flex-direction: row;
     height: 60px;
     width: 60px;
+    padding: 10px;
     
 }
 .card-img img{
     display: flex;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
    
     
 }
-main div h3{
+main div h4{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display:block;
         text-align: center;
@@ -187,4 +232,78 @@ main div p{
 }
 footer{
     grid-area: footer;
+}
+
+footer section div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer h3,h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.repeat-photos{
+    background-image: url(pessoa1.jpg);
+    background-repeat: space;
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.cinzinha{
+    background-color: lightgray;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.cinzinha a{
+    text-decoration: none;
+    color: gray;
+}
+
+.ajeitar{
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    opacity: 0.4;
+    width: 300px;
+    
+}
+.fa-pinterest:hover,.fa-facebook-f:hover,.fa-jedi-order:hover{
+color:rgba(79, 228, 79, 0.8);
+cursor: pointer;
+opacity: 1;
+}
+
+.padding{
+    padding: 10px;
+}
+
+/* Fazer versoes de tela */
+@media (min-width:600px){
+
+}
+
+@media (min-width:982px){
+
 }
